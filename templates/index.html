@@ -1,1 +1,19 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>QR Code Generator</h1>
+    <form method="POST" enctype="multipart/form-data">
+      <input type="text" name="text" placeholder="Enter text..." required><br>
+      <label>Optional: Upload Logo</label>
+      <input type="file" name="logo" accept="image/*"><br>
+      <button type="submit">Generate QR Code</button>
+    </form>
+  </div>
+</body>
+</html>
 
